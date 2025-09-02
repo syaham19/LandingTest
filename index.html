@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positivus</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+        <img src="Image/Positivus.svg" alt="logo">
+
+    </div>
+    <div class="nav-right">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <a href="#" class="cta-btn">Get Started</a>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+  <div class="container hero">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          Navigating the<br />
+          digital landscape<br />
+          for success
+        </h1>
+
+        <p class="hero__subtitle">
+          Our digital marketing agency helps businesses grow and succeed online
+          through a range of services including SEO, PPC, social media marketing,
+          and content creation.
+        </p>
+
+        <a class="btn btn--primary" href="#contact">Book a consultation</a>
+      </div>
+
+      <div class="hero__media">
+        <img
+          src="Image/Illustration.svg"
+          alt=""
+          class="hero__image"
+          loading="eager"
+          decoding="async"
+        />
+      </div>
+    </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
+
+   <!-- BRAND STRIP -->
+  <section class="brands" aria-label="Trusted by">
+    <div class="brands-row">
+      <!-- Ganti sumber logo sesuai aset kamu -->
+      <img class="brand-logo" src="Image/Company logo-1.svg"  alt="Amazon logo" />
+      <img class="brand-logo" src="Image/Company logo-2.svg" alt="Dribbble logo" />
+      <img class="brand-logo" src="Image/Company logo-3.svg"  alt="HubSpot logo" />
+      <img class="brand-logo" src="Image/Company logo-4.svg"   alt="Notion logo" />
+      <img class="brand-logo" src="Image/Company logo-5.svg"  alt="Netflix logo" />
+      <img class="brand-logo" src="Image/Company logo.svg"     alt="Zoom logo" />
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="container" aria-labelledby="services-title">
+    <h2>Services</h2>
+    <p class="intro">
+      At our digital marketing agency, we offer a range of services to help businesses grow and succeed online.
+      These services include:
+    </p>
+
+    <div class="services-grid">
+      <!-- 1. SEO -->
+      <article class="service-card theme-white">
+        <div class="stack">
+          <h3 class="title">
+            <span class="tag">Search engine</span><br />
+            <span class="tag">optimization</span>
+          </h3>
+          <p class="meta">Boost visibility and rank higher with on-page, off-page, and technical SEO.</p>
+          <a class="cta" href="#">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l1.41 1.41L8.83 10H20v2H8.83l4.58 4.59L12 18l-8-8 8-8z" fill="currentColor"/></svg>
+            Learn more
+          </a>
+        </div>
+        <div class="illustration">
+          <img class="service-img" src="Image/Illustration-1.png" alt="SEO illustration" />
+        </div>
+      </article>
+
+      <!-- 2. PPC -->
+      <article class="service-card theme-lime">
+        <div class="stack">
+          <h3 class="title">
+            <span class="tag">Pay-per-click</span><br />
+            <span class="tag">advertising</span>
+          </h3>
+          <p class="meta">Drive targeted traffic fast with Google Ads & social ads.</p>
+          <a class="cta" href="#">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l1.41 1.41L8.83 10H20v2H8.83l4.58 4.59L12 18l-8-8 8-8z" fill="currentColor"/></svg>
+            Learn more
+          </a>
+        </div>
+        <div class="illustration">
+          <img class="service-img" src="Image/Illustration-2.png" alt="PPC illustration" />
+        </div>
+      </article>
+
+      <!-- 3. Social Media -->
+      <article class="service-card theme-dark">
+        <div class="stack">
+          <h3 class="title">
+            <span class="tag">Social Media</span><br />
+            <span class="tag">Marketing</span>
+          </h3>
+          <p class="meta">Strategi konten, kalender, dan pengelolaan komunitas.</p>
+          <a class="cta" href="#">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l1.41 1.41L8.83 10H20v2H8.83l4.58 4.59L12 18l-8-8 8-8z" fill="currentColor"/></svg>
+            Learn more
+          </a>
+        </div>
+        <div class="illustration">
+          <img class="service-img" src="Image/Illustration-3.png" alt="Social media illustration" />
+        </div>
+      </article>
+
+      <!-- 4. Email Marketing -->
+      <article class="service-card theme-white">
+        <div class="stack">
+          <h3 class="title">
+            <span class="tag">Email</span><br />
+            <span class="tag">Marketing</span>
+          </h3>
+          <p class="meta">Otomasi, segmentasi, dan optimasi CTR untuk retensi.</p>
+          <a class="cta" href="#">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l1.41 1.41L8.83 10H20v2H8.83l4.58 4.59L12 18l-8-8 8-8z" fill="currentColor"/></svg>
+            Learn more
+          </a>
+        </div>
+        <div class="illustration">
+          <img class="service-img" src="Image/Illustration-4.png" alt="Email marketing illustration" />
+        </div>
+      </article>
+
+      <!-- 5. Content Creation -->
+      <article class="service-card theme-lime">
+        <div class="stack">
+          <h3 class="title">
+            <span class="tag">Content</span><br />
+            <span class="tag">Creation</span>
+          </h3>
+          <p class="meta">Artikel, video, desain visual—disesuaikan dengan brand.</p>
+          <a class="cta" href="#">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l1.41 1.41L8.83 10H20v2H8.83l4.58 4.59L12 18l-8-8 8-8z" fill="currentColor"/></svg>
+            Learn more
+          </a>
+        </div>
+        <div class="illustration">
+          <img class="service-img" src="assets/content.svg" alt="Content creation illustration" />
+        </div>
+      </article>
+
+      <!-- 6. Analytics -->
+      <article class="service-card theme-dark">
+        <div class="stack">
+          <h3 class="title">
+            <span class="tag">Analytics and</span><br />
+            <span class="tag">Tracking</span>
+          </h3>
+          <p class="meta">Setup GA4, dashboard, dan insight berbasis data.</p>
+          <a class="cta" href="#">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l1.41 1.41L8.83 10H20v2H8.83l4.58 4.59L12 18l-8-8 8-8z" fill="currentColor"/></svg>
+            Learn more
+          </a>
+        </div>
+        <div class="illustration">
+          <img class="service-img" src="assets/analytics.svg" alt="Analytics illustration" />
+        </div>
+      </article>
+    </div>
+  </section>
+
+
+
+  
+</body>
+</html>
